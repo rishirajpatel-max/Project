@@ -1,37 +1,54 @@
-header{
-    text-align: center;
-    background-color: rgb(168, 230, 230);
-   
+header {
+  text-align: center;
+  justify-content: space-around;
+  display: flex;
+  /* background-color: rgb(168, 230, 230); */
 }
-nav{
-    text-align: center;
-    
-   
+nav {
+  text-align: center;
+  /* background-color: rgb(230, 168, 168); */
+  padding: 10px;
 }
-li{
-    display: inline-block;
-    margin: 0 10px;
+li {
+  display: inline-block;
+  margin: 0 10px;
 }
-#about{
-    text-align: center;
-    background-color: rgb(67, 235, 109);
-    padding: 20px;
+#about {
+  text-align: center;
+  /* background-color: rgb(67, 235, 109); */
+  padding: 20px;
 }
-#projects{
-    text-align: center;
-    /* background-color: rgb(101, 67, 67); */
-    padding: 20px;
+#projects {
+  text-align: center;
+  /* background-color: rgb(101, 67, 67); */
+  padding: 20px;
 }
-#contact{
-    text-align: center;
-    /* background-color: rgb(138, 106, 106); */
-    padding: 20px;
+#contact {
+  text-align: center;
+  /* background-color: rgb(138, 106, 106); */
+  padding: 20px;
 }
-#skills{
-    text-align: left;
-    /* background-color: rgb(151, 128, 128); */
-    padding: 20px;
+#skills {
+  text-align: left;
+  /* background-color: rgb(151, 128, 128); */
+  padding: 20px;
 }
-body{
-    background-color: rgb(148, 76, 113);
+body {
+  background-image: url(background.jpg);
+  background-position: fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+img {
+   clip-path: circle(50%); 
+
+}
+header img {
+  width: 150px;
+  height: 150px;
+}
+header > p {
+  font-size: 20px;
+  font-weight: 200;
 }
