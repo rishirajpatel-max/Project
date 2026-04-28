@@ -1,0 +1,80 @@
+JAVASCRIPT COMPLETE THEORY NOTES
+
+1.  INTRODUCTION TO JAVASCRIPT JavaScript is a high-level, interpreted
+    programming language mainly used for making web pages interactive.
+    It runs inside web browsers and also on servers using environments
+    like Node.js. JavaScript supports event-driven, functional, and
+    object-oriented programming.
+
+2.  VARIABLES AND DECLARATION Variables are used to store data values.
+
+Types of declaration: - var: Function scoped, can be redeclared and
+reassigned. - let: Block scoped, cannot be redeclared but can be
+reassigned. - const: Block scoped, cannot be redeclared or reassigned.
+
+3.  LINKING JAVASCRIPT FILE JavaScript can be added in three ways:
+
+-   Inline JavaScript
+-   Internal JavaScript (inside
+    tag)
+-   External JavaScript (using src attribute)
+
+Best practice: Place script before closing
+tag.
+
+4.  SCOPE Scope defines where a variable can be accessed.
+
+Types: - Global Scope - Function Scope - Block Scope
+
+let and const follow block scope, var follows function scope.
+
+5.  REASSIGNMENT AND REDECLARATION Reassignment: Changing the value of a
+    variable. Redeclaration: Declaring the same variable again.
+
+var allows both, let allows only reassignment, const allows neither.
+
+6.  TEMPORAL DEAD ZONE (TDZ) The time between entering scope and
+    variable declaration is called TDZ. Accessing variables in TDZ gives
+    ReferenceError.
+
+7.  HOISTING JavaScript moves declarations to the top of the scope.
+
+-   var: hoisted and initialized with undefined
+-   let and const: hoisted but not initialized (TDZ)
+
+8.  DATA TYPES AND TYPE SYSTEM Primitive Data Types: Number, String,
+    Boolean, Undefined, Null, BigInt, Symbol
+
+Non-Primitive: Object, Array, Function
+
+JavaScript is dynamically typed.
+
+9.  TYPE COERCION Automatic conversion of one data type to another.
+
+Examples: “5” + 2 = “52” “5” - 2 = 3
+
+== performs type coercion === checks strict equality
+
+10. OPERATORS Types of operators:
+
+-   Arithmetic: +, -, *, /, %
+-   Comparison: ==, ===, !=, >, <
+-   Logical: &&, ||, !
+-   Assignment: =, +=, -=
+
+11. CONTROL FLOW Control flow determines the execution order of code.
+
+12. CONDITIONAL STATEMENTS if, else if, else are used for decision
+    making. switch is used for multiple conditions.
+
+13. LOOPS Loops are used to execute code repeatedly.
+
+Types: - for loop - while loop - do-while loop - for…in (objects) -
+for…of (arrays)
+
+14. IMPORTANT INTERVIEW POINTS
+
+-   Prefer let and const over var
+-   Always use === instead of ==
+-   Understand scope and hoisting clearly
+-   Know difference between primitive and reference types
