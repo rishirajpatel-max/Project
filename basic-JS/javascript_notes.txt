@@ -1,4 +1,4 @@
-JAVASCRIPT COMPLETE THEORY NOTES
+JAVASCRIPT  THEORY NOTES
 
 1.  INTRODUCTION TO JAVASCRIPT JavaScript is a high-level, interpreted
     programming language mainly used for making web pages interactive.
@@ -78,3 +78,49 @@ for…of (arrays)
 -   Always use === instead of ==
 -   Understand scope and hoisting clearly
 -   Know difference between primitive and reference types
+
+
+                                    JavaScript Functions Notes
+
+1.  What is a Function? A function is a block of reusable code used to
+    perform a specific task.
+
+Example: function greet() { console.log(“Hello!”); } greet();
+
+2.  Types of Functions
+
+a)  Function Declaration: function add(a, b) { return a + b; }
+
+b)  Function Expression: const add = function(a, b) { return a + b; };
+
+c)  Arrow Function: const add = (a, b) => a + b;
+
+3.  Parameters vs Arguments Parameters are variables in function
+    definition. Arguments are actual values passed.
+
+Example: function sum(a, b) { return a + b; } sum(5, 10);
+
+4.  Return Statement Used to return value from function.
+
+5.  Default Parameters function greet(name = “Guest”) {
+    console.log(“Hello” + name); }
+
+6.  Anonymous Function const x = function() { console.log(“Anonymous”);
+    };
+
+7.  Callback Function function greet(name, callback) {
+    console.log(“Hi” + name); callback(); }
+
+8.  Higher Order Function A function that takes or returns another
+    function.
+
+9.  IIFE (function() { console.log(“Runs immediately”); })();
+
+10. Scope Local and Global scope.
+
+11. Hoisting Function declarations are hoisted.
+
+12. Rest Parameters function sum(…numbers) { return
+    numbers.reduce((a, b) => a + b); }
+
+
