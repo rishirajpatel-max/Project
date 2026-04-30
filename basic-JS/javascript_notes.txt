@@ -124,3 +124,59 @@ Example: function sum(a, b) { return a + b; } sum(5, 10);
     numbers.reduce((a, b) => a + b); }
 
 
+=================== ARRAYS ====================
+
+Definition: An array is a collection of multiple values stored in a
+single variable. It allows storing different types of data together.
+
+Example: let arr = [10, 20, 30, 40];
+
+Key Features: - Stores multiple values - Index starts from 0 - Can store
+mixed data types - Dynamic in size
+
+Accessing Elements: arr[0] gives first element
+
+Common Methods: push() -> Add element at end pop() -> Remove last
+element shift() -> Remove first element unshift() -> Add element at
+beginning length -> Number of elements
+
+Looping: arr.forEach(function(value){ console.log(value); });
+
+Types: - One-dimensional - Multi-dimensional (e.g., [[1,2],[3,4]])
+
+Advantages: - Easy data handling - Built-in methods available
+
+Disadvantages: - Index-based access only - Complex when nested
+
+==================== OBJECTS ====================
+
+Definition: An object is a collection of key-value pairs used to
+represent real-world entities.
+
+Example: let person = { name: “Rishi”, age: 20, city: “Indore” };
+
+Key Features: - Key-value structure - Keys are unique - Values can be
+any type
+
+Accessing Values: Dot notation: person.name Bracket notation:
+person[“age”]
+
+Adding/Updating: person.age = 21; person.gender = “M”;
+
+Deleting: delete person.city;
+
+Methods: let obj = { greet: function(){ console.log(“Hello”); } };
+
+Looping: for(let key in person){ console.log(key, person[key]); }
+
+Advantages: - Flexible - Represents real-world data
+
+Disadvantages: - Slower than arrays - No strict order
+
+==================== ARRAY VS OBJECT ====================
+
+Array: - Uses index - Ordered data - Best for list
+
+Object: - Uses keys - Structured data - Best for real-world entities
+
+Conclusion: Use arrays for lists and objects for structured data.
