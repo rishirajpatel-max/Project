@@ -1,0 +1,182 @@
+JAVASCRIPT  THEORY NOTES
+
+1.  INTRODUCTION TO JAVASCRIPT JavaScript is a high-level, interpreted
+    programming language mainly used for making web pages interactive.
+    It runs inside web browsers and also on servers using environments
+    like Node.js. JavaScript supports event-driven, functional, and
+    object-oriented programming.
+
+2.  VARIABLES AND DECLARATION Variables are used to store data values.
+
+Types of declaration: - var: Function scoped, can be redeclared and
+reassigned. - let: Block scoped, cannot be redeclared but can be
+reassigned. - const: Block scoped, cannot be redeclared or reassigned.
+
+3.  LINKING JAVASCRIPT FILE JavaScript can be added in three ways:
+
+-   Inline JavaScript
+-   Internal JavaScript (inside
+    tag)
+-   External JavaScript (using src attribute)
+
+Best practice: Place script before closing
+tag.
+
+4.  SCOPE Scope defines where a variable can be accessed.
+
+Types: - Global Scope - Function Scope - Block Scope
+
+let and const follow block scope, var follows function scope.
+
+5.  REASSIGNMENT AND REDECLARATION Reassignment: Changing the value of a
+    variable. Redeclaration: Declaring the same variable again.
+
+var allows both, let allows only reassignment, const allows neither.
+
+6.  TEMPORAL DEAD ZONE (TDZ) The time between entering scope and
+    variable declaration is called TDZ. Accessing variables in TDZ gives
+    ReferenceError.
+
+7.  HOISTING JavaScript moves declarations to the top of the scope.
+
+-   var: hoisted and initialized with undefined
+-   let and const: hoisted but not initialized (TDZ)
+
+8.  DATA TYPES AND TYPE SYSTEM Primitive Data Types: Number, String,
+    Boolean, Undefined, Null, BigInt, Symbol
+
+Non-Primitive: Object, Array, Function
+
+JavaScript is dynamically typed.
+
+9.  TYPE COERCION Automatic conversion of one data type to another.
+
+Examples: “5” + 2 = “52” “5” - 2 = 3
+
+== performs type coercion === checks strict equality
+
+10. OPERATORS Types of operators:
+
+-   Arithmetic: +, -, *, /, %
+-   Comparison: ==, ===, !=, >, <
+-   Logical: &&, ||, !
+-   Assignment: =, +=, -=
+
+11. CONTROL FLOW Control flow determines the execution order of code.
+
+12. CONDITIONAL STATEMENTS if, else if, else are used for decision
+    making. switch is used for multiple conditions.
+
+13. LOOPS Loops are used to execute code repeatedly.
+
+Types: - for loop - while loop - do-while loop - for…in (objects) -
+for…of (arrays)
+
+14. IMPORTANT INTERVIEW POINTS
+
+-   Prefer let and const over var
+-   Always use === instead of ==
+-   Understand scope and hoisting clearly
+-   Know difference between primitive and reference types
+
+
+                                    JavaScript Functions Notes
+
+1.  What is a Function? A function is a block of reusable code used to
+    perform a specific task.
+
+Example: function greet() { console.log(“Hello!”); } greet();
+
+2.  Types of Functions
+
+a)  Function Declaration: function add(a, b) { return a + b; }
+
+b)  Function Expression: const add = function(a, b) { return a + b; };
+
+c)  Arrow Function: const add = (a, b) => a + b;
+
+3.  Parameters vs Arguments Parameters are variables in function
+    definition. Arguments are actual values passed.
+
+Example: function sum(a, b) { return a + b; } sum(5, 10);
+
+4.  Return Statement Used to return value from function.
+
+5.  Default Parameters function greet(name = “Guest”) {
+    console.log(“Hello” + name); }
+
+6.  Anonymous Function const x = function() { console.log(“Anonymous”);
+    };
+
+7.  Callback Function function greet(name, callback) {
+    console.log(“Hi” + name); callback(); }
+
+8.  Higher Order Function A function that takes or returns another
+    function.
+
+9.  IIFE (function() { console.log(“Runs immediately”); })();
+
+10. Scope Local and Global scope.
+
+11. Hoisting Function declarations are hoisted.
+
+12. Rest Parameters function sum(…numbers) { return
+    numbers.reduce((a, b) => a + b); }
+
+
+=================== ARRAYS ====================
+
+Definition: An array is a collection of multiple values stored in a
+single variable. It allows storing different types of data together.
+
+Example: let arr = [10, 20, 30, 40];
+
+Key Features: - Stores multiple values - Index starts from 0 - Can store
+mixed data types - Dynamic in size
+
+Accessing Elements: arr[0] gives first element
+
+Common Methods: push() -> Add element at end pop() -> Remove last
+element shift() -> Remove first element unshift() -> Add element at
+beginning length -> Number of elements
+
+Looping: arr.forEach(function(value){ console.log(value); });
+
+Types: - One-dimensional - Multi-dimensional (e.g., [[1,2],[3,4]])
+
+Advantages: - Easy data handling - Built-in methods available
+
+Disadvantages: - Index-based access only - Complex when nested
+
+==================== OBJECTS ====================
+
+Definition: An object is a collection of key-value pairs used to
+represent real-world entities.
+
+Example: let person = { name: “Rishi”, age: 20, city: “Indore” };
+
+Key Features: - Key-value structure - Keys are unique - Values can be
+any type
+
+Accessing Values: Dot notation: person.name Bracket notation:
+person[“age”]
+
+Adding/Updating: person.age = 21; person.gender = “M”;
+
+Deleting: delete person.city;
+
+Methods: let obj = { greet: function(){ console.log(“Hello”); } };
+
+Looping: for(let key in person){ console.log(key, person[key]); }
+
+Advantages: - Flexible - Represents real-world data
+
+Disadvantages: - Slower than arrays - No strict order
+
+==================== ARRAY VS OBJECT ====================
+
+Array: - Uses index - Ordered data - Best for list
+
+Object: - Uses keys - Structured data - Best for real-world entities
+
+Conclusion: Use arrays for lists and objects for structured data.
